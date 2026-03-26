@@ -14,7 +14,7 @@ os.makedirs('data/val/cat', exist_ok=True)
 os.makedirs('data/val/dog', exist_ok=True)
 
 # Your Kaggle training folder
-source_dir = '/Users/ahmeddogar/Documents/DogCat/train/train'
+source_dir = os.path.join('data', 'raw')
 
 # Get all files
 all_files = sorted(os.listdir(source_dir))
